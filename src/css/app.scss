@@ -1,0 +1,51 @@
+:root {
+  --planner-border: rgba(120, 120, 120, 0.26);
+}
+
+body {
+  background: #f7f8fb;
+}
+
+.body--dark body {
+  background: #111418;
+}
+
+.planner-page {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.planner-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar-shell {
+  border: 1px solid var(--planner-border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+.body--dark .calendar-shell {
+  background: #1d1f24;
+}
+
+.chore-chip {
+  cursor: grab;
+  user-select: none;
+}
+
+.kid-tile {
+  min-height: 132px;
+}
+
+@media (max-width: 700px) {
+  .planner-page {
+    padding: 10px;
+  }
+}
